@@ -137,15 +137,13 @@ nav.dn .nlogo{color:var(--c)}
 .bb-legal[open] summary::after{transform:rotate(180deg)}
 .bb-legal-body{font-size:.82rem;line-height:1.72;color:var(--dtm);padding:.8rem 0 .4rem;border-top:1px solid rgba(240,232,216,.12)}
 .bb-cost-section{padding-top:clamp(2.4rem,3.5vw,3.4rem);padding-bottom:clamp(2.4rem,3.5vw,3.4rem)}
-.bb-cost-grid{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:clamp(2rem,5vw,5rem);align-items:center}
+.bb-cost-grid{max-width:var(--mw);margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr);gap:clamp(2.5rem,6vw,6rem);align-items:center}
 .bb-cost-copy .slbl{margin-bottom:1rem}
 .bb-cost-copy .sh2{margin-bottom:1.15rem}
 .bb-cost-copy .sp+.sp{margin-top:.75rem}
 .bb-cost-copy>.bb-cost-list{margin-top:1.45rem;border-top:1px solid rgba(26,21,14,.12)}
-.bb-cost-media{position:relative;width:100%;max-width:620px;min-height:510px;justify-self:end;padding:0 58px 88px 0}
-.bb-cost-image{position:absolute;inset:0 58px 88px 0;margin:0;overflow:hidden;border-radius:9px;background:var(--d2);box-shadow:0 22px 54px rgba(26,21,14,.14)}
-.bb-cost-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
-.bb-cost-route{position:absolute;z-index:2;right:0;bottom:0;width:42%;aspect-ratio:9/16;margin:0;overflow:hidden;border:6px solid var(--c);border-radius:9px;background:var(--d);box-shadow:0 20px 46px rgba(26,21,14,.22)}
+.bb-cost-media{position:relative;width:100%;max-width:500px;aspect-ratio:3/4;justify-self:end}
+.bb-cost-route{position:absolute;inset:0;margin:0;overflow:hidden;border:0;border-radius:8px;background:var(--d);box-shadow:0 24px 58px rgba(26,21,14,.17)}
 .bb-cost-route video{display:block;width:100%;height:100%;object-fit:cover}
 .bb-cost-card{padding:clamp(1.25rem,2.4vw,1.8rem);background:var(--c2);border:1px solid rgba(26,21,14,.1);border-radius:8px;box-shadow:0 14px 38px rgba(26,21,14,.05)}
 .bb-cost-kicker{font-size:.58rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--g);margin-bottom:.55rem}
@@ -216,9 +214,8 @@ nav.dn .nlogo{color:var(--c)}
   .bb-cost-grid{grid-template-columns:1fr;gap:1.5rem;align-items:start}
   .bb-cost-section{padding-top:2.6rem;padding-bottom:2.6rem}
   .bb-cost-card{padding:1.15rem}
-  .bb-cost-media{max-width:640px;min-height:480px;justify-self:start;padding-right:48px;padding-bottom:76px}
-  .bb-cost-image{inset:0 48px 76px 0}
-  .bb-cost-route{width:min(42%,220px);border-width:5px}
+  .bb-cost-media{max-width:520px;aspect-ratio:3/4;justify-self:center}
+  .bb-cost-route{width:100%}
   .bb-why-grid{grid-template-columns:1fr;gap:1.8rem}
   .bb-why-section{padding-top:2.8rem;padding-bottom:3rem}
   .bb-why-media{max-width:600px;min-height:400px;justify-self:center}
@@ -2362,7 +2359,7 @@ body::after{
       </div>
     </div>
     <div class="rv d2" style="border-radius:8px;overflow:hidden;aspect-ratio:3/4;position:sticky;top:calc(var(--nh) + 1.5rem)">
-      <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover"><source src="STAN-VIDEO.mp4" type="video/mp4"></video>
+      <video autoplay muted loop playsinline preload="metadata" style="width:100%;height:100%;object-fit:cover"><source src="STAN-VIDEO.mp4?v=2" type="video/mp4"></video>
     </div>
   </div>
 </section>
@@ -3745,9 +3742,6 @@ body::after{
       </details>
     </div>
     <div class="bb-cost-media rv d1">
-      <figure class="bb-cost-image">
-        <img src="bruis-box-costs-wok.webp" alt="Bruis Box op de balie van een levendige Aziatische horecazaak" loading="lazy" decoding="async">
-      </figure>
       <figure class="bb-cost-route">
         <video autoplay muted loop playsinline preload="metadata" poster="bruis-box-route-poster.jpg" aria-label="Sfeerbeelden van een horecazaak met Bruis Box">
           <source src="bruis-box-route.mp4" type="video/mp4">
